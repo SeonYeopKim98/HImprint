@@ -95,7 +95,7 @@ python hiimprint.py \
 | `--cutoff` | `-c` | `0.8` | Methylation difference threshold to call imprinting |
 | `--length` | `-l` | `10` | Minimum number of consecutive CpGs to define a region |
 | `--threads` | `-t` | `16` | Number of parallel threads (Dask) |
-| `--min_cov` | — | `10` | Minimum coverage per CpG for both haplotypes |
+| `--min_cov` | — | `1` | Minimum coverage per CpG for both haplotypes |
 | `--pe` | — | `0.9` | HMM emission probability (major state) |
 | `--pt` | — | `0.9` | HMM transition probability (major state) |
 
