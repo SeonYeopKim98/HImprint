@@ -1,6 +1,6 @@
 # HImprint
 
-> **Genome-wide imprinted DMR detection from haplotype-resolved long-read methylation, using a directional 3-state HMM**
+> **Genome-wide imprinted DMR detection from haplotype-resolved long-read methylation, using a 3-state HMM**
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)](https://www.python.org/)
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue)]()
@@ -15,7 +15,7 @@ HImprint scans the genome directly from the methylation difference; it does not 
 
 ## Key Features
 
-- **Directional 3-state HMM** — assigns each CpG to *not-imprinted*, *haplotype 1–methylated*, or *haplotype 2–methylated*, encoding the direction of the allelic difference.
+- **3-state HMM** — assigns each CpG to *not-imprinted*, *haplotype 1–methylated*, or *haplotype 2–methylated*, encoding the direction of the allelic difference.
 - **Run-length filtering** — retains only runs of ≥ `-l` consecutive imprinted CpGs, removing short, isolated calls.
 - **Annotation-free, genome-wide** — no ICR coordinate list or reference FASTA needed; it works from the per-CpG methylation difference alone.
 - **Two input modes** — PacBio HiFi via pb-CpG-tools haplotype BEDs, or any platform via a pre-computed per-CpG difference file.
