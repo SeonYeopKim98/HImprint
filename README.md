@@ -9,8 +9,6 @@
 
 **HImprint** detects imprinted differentially methylated regions (DMRs) — regions where the two haplotypes carry opposite methylation — from phased long-read methylation data. It models the per-CpG methylation difference between haplotypes with a **directional 3-state hidden Markov model** (not-imprinted / haplotype 1–methylated / haplotype 2–methylated), so each detected region encodes *which* haplotype is methylated, not merely that the two differ. A run-length filter then keeps only contiguous segments, suppressing isolated single-CpG calls.
 
-HImprint scans the genome directly from the methylation difference; it does not require a list of ICR coordinates or a reference FASTA.
-
 ---
 
 ## Key Features
