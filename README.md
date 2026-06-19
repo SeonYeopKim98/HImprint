@@ -170,7 +170,7 @@ If `-o` is omitted, the file is named `{sample}.himprint.c{cutoff}_l{length}_pe{
 ## Method Overview
 
 ```
-https://github.com/user-attachments/assets/dfa8c79d-e3b7-4511-8689-0202c86c5bf6
+<img width="1892" height="837" alt="Image" src="https://github.com/user-attachments/assets/d1722616-93fd-455b-83dc-836d099289e7" />
 ```
 
 ---
