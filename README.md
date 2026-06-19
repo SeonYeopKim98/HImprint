@@ -90,7 +90,7 @@ python himprint.py \
 | `--hap2` | — | — | Haplotype 2 BED (pb-CpG-tools format) |
 | `--sample` | `-s` | inferred | Sample name for the output filename and header (default: from input filename) |
 | `--min_cov` | — | `1` | Minimum coverage per CpG on **both** haplotypes (Mode 1 only) |
-| `--cutoff` | `-c` | `0.9` | Per-CpG methylation-difference cutoff: `|diff| ≥ cutoff` flags an imprinted CpG |
+| `--cutoff` | `-c` | `0.9` | Per-CpG methylation-difference cutoff|
 | `--length` | `-l` | `10` | Minimum number of consecutive CpGs to call a DMR |
 | `--pe` | — | `0.6` | HMM emission probability for the dominant state (higher → stricter per-CpG requirement) |
 | `--pt` | — | `0.95` | HMM self-transition probability (higher → longer, more contiguous DMRs) |
