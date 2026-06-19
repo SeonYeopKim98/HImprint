@@ -170,27 +170,7 @@ If `-o` is omitted, the file is named `{sample}.himprint.c{cutoff}_l{length}_pe{
 ## Method Overview
 
 ```
-Phased per-CpG methylation  (Mode 1: Hap1/Hap2 BED  |  Mode 2: pre-computed diff)
-         │
-         ▼
-  Per-CpG methylation difference
-  (meth_hap1 − meth_hap2) / 100        # Mode 1; coverage-filtered (--min_cov)
-         │
-         ▼
-  Per-CpG state assignment  (3 states)
-   diff ≥  cutoff → 1  (hap1-methylated)
-   diff ≤ −cutoff → 2  (hap2-methylated)
-   otherwise      → 0  (not imprinted)
-         │
-         ▼
-  Directional 3-state HMM   (per chromosome, in parallel)
-   states: not-imprinted / hap1-methylated / hap2-methylated
-         │
-         ▼
-  Run-length filtering   (keep runs of state 1 or 2 with ≥ -l CpGs)
-         │
-         ▼
-  Imprinted DMRs  (BED)
+<img width="1892" height="837" alt="Image" src="https://github.com/user-attachments/assets/dfa8c79d-e3b7-4511-8689-0202c86c5bf6" />
 ```
 
 ---
