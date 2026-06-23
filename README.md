@@ -4,7 +4,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)](https://www.python.org/)
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue)]()
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![License](https://img.shields.io/badge/License-PolyForm%20Noncommercial%201.0.0-green)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS-lightgrey)]()
 
 **HImprint** detects imprinted differentially methylated regions (DMRs) — regions where the two haplotypes carry opposite methylation — from phased long-read methylation data. It models the per-CpG methylation difference between haplotypes with a **directional 3-state hidden Markov model** (not-imprinted / haplotype 1–methylated / haplotype 2–methylated), so each detected region encodes *which* haplotype is methylated, not merely that the two differ. A run-length filter then keeps only contiguous segments, suppressing isolated single-CpG calls.
@@ -186,16 +186,10 @@ https://github.com/user-attachments/assets/3bc4c182-f10f-4cc5-a119-0068d34f2b0d
 
 ---
 
-## Citation
-
-Manuscript in preparation. A release tag and Zenodo DOI will be added here on publication.
-
-```
-[Citation information coming soon]
-```
-
----
-
 ## License
+
+HImprint is released under the **PolyForm Noncommercial License 1.0.0**.
+It is free to use for non-commercial purposes, including academic research, teaching, and evaluation.
+Commercial use requires a separate license. See [LICENSE](LICENSE) for the full terms.
 
 MIT — see [LICENSE](LICENSE).
