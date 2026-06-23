@@ -25,7 +25,7 @@
 ## Installation
 
 ```bash
-git clone https://github.com/<your-org>/HImprint.git
+git clone https://github.com/SeonYeopKim98/HImprint.git
 cd HImprint
 pip install numpy pandas dask pomegranate
 ```
