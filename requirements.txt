@@ -1,0 +1,4 @@
+pomegranate==1.1.2
+dask==2026.1.2
+numpy==2.2.6
+pandas==2.3.3
