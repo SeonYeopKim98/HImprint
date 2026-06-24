@@ -32,12 +32,6 @@ pip install numpy pandas dask pomegranate
 
 > Requires **Python ≥ 3.9** (tested on 3.10). `pomegranate` (≥ 1.0) provides the HMM and pulls in PyTorch as a dependency. A conda or virtual environment is recommended:
 
-```bash
-conda create -n himprint python=3.10
-conda activate himprint
-pip install numpy pandas dask pomegranate
-```
-
 ---
 
 ## Usage
