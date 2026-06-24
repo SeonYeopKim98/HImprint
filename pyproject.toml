@@ -15,7 +15,7 @@ authors = [
 keywords = ["bioinformatics", "methylation", "imprinting", "long-read", "hmm", "dmr"]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: PolyForm Noncommercial License 1.0.0",
     "Operating System :: POSIX :: Linux",
     "Intended Audience :: Science/Research",
     "Topic :: Scientific/Engineering :: Bio-Informatics",
