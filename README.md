@@ -24,11 +24,18 @@
 
 ## Installation
 
-```bash
 git clone https://github.com/SeonYeopKim98/HImprint.git
 cd HImprint
-pip install numpy pandas dask pomegranate
-```
+
+# option A — pip
+pip install -r requirements.txt
+
+# option B — conda
+conda env create -f environment.yml
+conda activate himprint
+
+# option C — 패키지로 설치
+pip install .
 
 > Requires **Python ≥ 3.9** (tested on 3.10). `pomegranate` (≥ 1.0) provides the HMM and pulls in PyTorch as a dependency. A conda or virtual environment is recommended:
 
