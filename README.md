@@ -24,20 +24,29 @@
 
 ## Installation
 
+```bash
 git clone https://github.com/SeonYeopKim98/HImprint.git
 cd HImprint
+```
 
-# option A — pip
+**Option A — pip**
+
+```bash
 pip install -r requirements.txt
+```
 
-# option B — conda
+**Option B — conda**
+
+```bash
 conda env create -f environment.yml
 conda activate himprint
+```
 
-# option C — package
+**Option C — package**
+
+```bash
 pip install .
-
-> Requires **Python ≥ 3.9** (tested on 3.10). `pomegranate` (≥ 1.0) provides the HMM and pulls in PyTorch as a dependency. A conda or virtual environment is recommended:
+```
 
 ---
 
