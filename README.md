@@ -34,7 +34,7 @@ pip install -r requirements.txt
 conda env create -f environment.yml
 conda activate himprint
 
-# option C — 패키지로 설치
+# option C — package
 pip install .
 
 > Requires **Python ≥ 3.9** (tested on 3.10). `pomegranate` (≥ 1.0) provides the HMM and pulls in PyTorch as a dependency. A conda or virtual environment is recommended:
