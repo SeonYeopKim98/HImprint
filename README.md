@@ -41,13 +41,6 @@ pip install -r requirements.txt
 conda env create -f environment.yml
 conda activate himprint
 ```
-
-**Option C — package**
-
-```bash
-pip install .
-```
-
 ---
 
 ## Usage
