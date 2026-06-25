@@ -8,7 +8,7 @@ version = "1.0.0"
 description = "HMM-based Imprinted DMR Detection from Long-read data"
 readme = "README.md"
 requires-python = ">=3.9"
-license = { text = "MIT" }
+license = { text = "License :: OSI Approved :: PolyForm Noncommercial License 1.0.0" }
 authors = [
     { name = "HImprint Authors" }
 ]
