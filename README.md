@@ -44,6 +44,22 @@ conda activate himprint
 
 ---
 
+## Quick Start (Example)
+
+A small example dataset is provided in `test/` — a subset of three imprinting control regions from the public CEPH 1463 sample NA12891.
+
+```bash
+python himprint.py \
+  --hap1 test/example.hap1.bed \
+  --hap2 test/example.hap2.bed \
+  -s example \
+  -o my_output.bed
+```
+
+This detects 2 DMRs, at the *SNURF* and *MEST* loci, matching the provided `test/expected_output.bed`.
+
+---
+
 ## Usage
 
 HImprint takes phased per-CpG methylation through one of two input modes.
@@ -92,7 +108,7 @@ python himprint.py \
 | `--hap2` | — | — | Haplotype 2 BED (pb-CpG-tools format) |
 | `--sample` | `-s` | inferred | Sample name for the output filename and header (default: from input filename) |
 | `--min_cov` | — | `1` | Minimum coverage per CpG on **both** haplotypes (Mode 1 only) |
-| `--cutoff` | `-c` | `0.9` | Per-CpG methylation-difference cutoff|
+| `--cutoff` | `-c` | `0.9` | Per-CpG methylation-difference cutoff |
 | `--length` | `-l` | `10` | Minimum number of consecutive CpGs to call a DMR |
 | `--pe` | — | `0.6` | HMM emission probability for the dominant state (higher → stricter per-CpG requirement) |
 | `--pt` | — | `0.95` | HMM self-transition probability (higher → longer, more contiguous DMRs) |
@@ -151,7 +167,7 @@ A BED-like file with a metadata header (lines beginning `##`) followed by a colu
 ##Date: 2026-06-08 12:00:00
 ##Sample: sample
 ##Parameters: cutoff=0.9, min_length=10, pe=0.6, pt=0.95, min_cov=1
-##Input CpGs: 28,415,002
+##Input CpGs: 28415002
 ##Runtime: 842.51s
 #chrom  start      end        state             n_cpg   dmr_length
 chr15   24954857   24956829   hap2_methylated   34      1972
@@ -181,10 +197,10 @@ If `-o` is omitted, the file is named `{sample}.himprint.c{cutoff}_l{length}_pe{
 
 | Package | Version | Purpose |
 |---|---|---|
-| `numpy` | ≥ 1.24 | Numerical operations |
-| `pandas` | ≥ 1.3 | Tabular I/O and merging |
-| `dask` | ≥ 2022.0 | Chromosome-level parallelism |
-| `pomegranate` | ≥ 1.0 | 3-state HMM (`DenseHMM`, `Categorical`); pulls in PyTorch |
+| `numpy` | 2.2.6 | Numerical operations |
+| `pandas` | 2.3.3 | Tabular I/O and merging |
+| `dask` | 2026.1.2 | Chromosome-level parallelism |
+| `pomegranate` | 1.1.2 | 3-state HMM (`DenseHMM`, `Categorical`); pulls in PyTorch |
 
 ---
 
